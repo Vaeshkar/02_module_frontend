@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contact us</h1>
+            <article>
+                <h2>Our Contact Information</h2>
+                <ul>
+                    <li>Phone: +123-456-7890</li>
+                    <li>Address: 123 Coding Street, Web City, CodeLand</li>
+                </ul>
+            </article>
+            <figure>
+                <img src="./img/pexels-chevanon-312418.jpg" alt="Coffee Image" style="width:300px;">
+                <figcaption>A relaxing cup of coffee</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="/submit-feedback" method="post"></form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 WBS Coding School</p>
+    </footer>
+</body>
+</html>
