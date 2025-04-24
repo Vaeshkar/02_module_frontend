@@ -1,0 +1,109 @@
+/* Root variables for theme colors and fonts */
+:root {
+    --primary-color: #6f4e37; /* Coffee brown */
+    --secondary-color: #d9c7b6; /* Light beige */
+    --accent-color: #a67b5b; /* Medium brown */
+    --text-color: #ffffff; /* White for text */
+    --font-family: 'Georgia', serif;
+    --transition-speed: 0.3s;
+}
+
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Navbar styles */
+header nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color var(--transition-speed);
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main figure img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+    margin: 1rem;
+}
+
+main figure figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Keyframes for image fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+}
