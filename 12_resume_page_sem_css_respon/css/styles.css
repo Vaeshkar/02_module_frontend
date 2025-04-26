@@ -206,28 +206,28 @@ footer {
         }
     }
 
-    /* Desktop Styles */
-    @media (min-width: 1025px) and (max-width: 1440px) {
-        .header_content {
-            max-width: 1440px;
-            margin: 0 auto;
-        }
+/* Desktop Styles */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .header_content {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 
-        .header h1 {
-        font-size: 2.5rem;
-        }
+    .header h1 {
+    font-size: 2.5rem;
+    }
 
-        h2 {
-        font-size: 1.8rem;
-        }
+    h2 {
+    font-size: 1.8rem;
+    }
 
-        .title {
-        font-size: 1.5rem;
-        }
+    .title {
+    font-size: 1.5rem;
+    }
 
-        .header_content {
-        grid-template-columns: 1fr;
-        gap: 25px;
+    .header_content {
+    grid-template-columns: 1fr;
+    gap: 25px;
     }
 
     .image {
