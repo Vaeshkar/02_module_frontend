@@ -18,7 +18,3 @@ node_modules/
 # IDE or editor settings
 .vscode/
 .idea/
-
-# Project Repos to ignore
-/20_project02_10hours/
-/34_project03_15hours/
