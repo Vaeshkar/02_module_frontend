@@ -19,5 +19,6 @@ node_modules/
 .vscode/
 .idea/
 
-# Don't add this one. 
+# Project Repos to ignore
 /20_project02_10hours/
+/34_project03_15hours/
