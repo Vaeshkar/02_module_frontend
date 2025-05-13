@@ -18,3 +18,6 @@ node_modules/
 # IDE or editor settings
 .vscode/
 .idea/
+
+# Don't add this one. 
+/20_project02_10hours/
