@@ -4,3 +4,6 @@
 [submodule "16_project01_concept_to_deployment"]
 	path = 16_project01_concept_to_deployment
 	url = https://github.com/Vaeshkar/16_project01_concept_to_deployment.git
+[submodule "41_project03_10hours"]
+	path = 41_project03_10hours
+	url = https://github.com/Vaeshkar/41_project03_10hours
