@@ -16,7 +16,6 @@ const everyNumbers = numbers.every((num) => {
 console.log(everyNumbers);
 
 /* 4. Initialize an Array of Objects */
-
 const students = [
     { name: "Alice", age: 25, passed: true },
     { name: "Bob", age: 22, passed: false },
@@ -30,10 +29,9 @@ const someStudents = students.some((value) => {
 })
 
 console.log(someStudents);
-
 /* 6. Use the every Method to Check if All Students are Older than 18 */
 const everyStudents = students.every((ageCheck) => {
-    return ageCheck >= 18;
+    return ageCheck.age >= 18;
 })
 
 console.log(everyStudents);
