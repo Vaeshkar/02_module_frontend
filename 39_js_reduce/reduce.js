@@ -10,7 +10,7 @@ console.log(sumNumbers);
 const numberz = [10, 20, 0, 5, -2, 1, -20]
 
 const countNumberz = numberz.reduce((acc, count) => {
-    if (count > 0) acc.positive += 1;
+    if (count >= 0) acc.positive += 1;
     else if (count < 0) acc.negative += 1;
 
     return acc;
