@@ -2,14 +2,14 @@
 const numbers = [4,8,15,16,23,42]
 
 /* 2. Use the Some Methods to Check of Numbers Greater Than 20 */
-const someNumbers = numbers.some((num) => {
+const someNumbers = numbers.some(num => {
     return num > 20;
 })
 
 console.log(someNumbers);
 
 /* 3. Use the Every Method to Check for Numbers Less than 50 */
-const everyNumbers = numbers.every((num) => {
+const everyNumbers = numbers.every(num => {
     return num < 50;
 })
 
@@ -24,14 +24,13 @@ const students = [
 ]
 
 /* 5. Use the some Method to Check if Any Student Failed */
-const someStudents = students.some((value) => {
+const someStudents = students.some(value => {
     return value.passed === false;
 })
-
 console.log(someStudents);
+
 /* 6. Use the every Method to Check if All Students are Older than 18 */
-const everyStudents = students.every((ageCheck) => {
+const everyStudents = students.every(ageCheck => {
     return ageCheck.age >= 18;
 })
-
 console.log(everyStudents);
