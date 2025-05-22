@@ -17,7 +17,7 @@ function createListItem(task) {
   li.className = 'border-b p-2 flex justify-between items-center';
 
   const span = document.createElement('span');
-  span.textContent = task.content;
+  span.textContent = task.taskContent;
 
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
@@ -56,7 +56,7 @@ form.addEventListener('submit', function (event) {
   if (text !== '') {
     let newTask = {
       id: makeId(),
-      content: text
+      taskContent: text
     };
 
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -78,10 +78,10 @@ clearButton.addEventListener('click', function () {
   // Get current tasks before clearing
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-  // List all task IDs (or contents)
+  // List all task IDs (or taskContents)
   console.log('Clear clicked. The following tasks were deleted:');
   tasks.forEach(task => {
-    console.log(`- ${task.id}: ${task.content}`);
+    console.log(`- ${task.id}: ${task.taskContent}`);
   });
 
   // Now clear and reload
