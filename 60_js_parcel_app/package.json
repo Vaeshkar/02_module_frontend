@@ -1,0 +1,16 @@
+{
+  "name": "60_js_parcel_app",
+  "version": "1.0.0",
+  "source":"index.html",
+  "scripts": {
+    "dev":"parcel",
+    "build":"parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
