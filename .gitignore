@@ -21,3 +21,4 @@ node_modules/
 
 # Directories to ignore:
 /61_js_third_party_libraries/
+61_js_third_party_libraries
