@@ -22,3 +22,7 @@ node_modules/
 # Directories to ignore:
 /61_js_third_party_libraries/
 61_js_third_party_libraries
+/53_js_self_assessment/
+53_js_self_assessment
+/54_project04_10hours/
+54_project04_10hours
