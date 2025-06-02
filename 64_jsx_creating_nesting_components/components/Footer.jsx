@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; 2025 WBS Coding School | React Fundamentals – Nesting components</p>
+            <p>&copy; 2025 WBS Coding School | React Fundamentals</p>
         </footer>
     )
 }
