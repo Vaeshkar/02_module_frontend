@@ -1,3 +1,3 @@
-[submodule "time-travel-agency"]
-	path = time-travel-agency
+[submodule "15_timetravel_page_css_respon_flex_grid/time-travel-agency"]
+	path = 15_timetravel_page_css_respon_flex_grid/time-travel-agency
 	url = https://github.com/Vaeshkar/time-travel-agency.git
