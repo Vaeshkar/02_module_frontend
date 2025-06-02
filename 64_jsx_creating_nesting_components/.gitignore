@@ -1,56 +1,24 @@
-# React/Node Modules
-node_modules/
-.cache/
-dist/
-build/
-
 # Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-log/
+lerna-debug.log*
 
-# OS-generated
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.*.local
-.env.local
+node_modules
+dist
+dist-ssr
+*.local
 
 # Editor directories and files
-.vscode/
-.idea/
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-
-# Dependency directories
-.pnp/
-.pnp.js
-
-# Testing
-coverage/
-jest-test-results.json
-
-# Optional npm cache directory
-.npm/
-
-# Parcel, Vite, Snowpack
-.parcel-cache/
-.vite/
-.snowpack/
-
-# Next.js
-.next/
-out/
-
-# Storybook
-storybook-static/
-
-# Misc
-*.tgz
-*.log
+*.sw?
