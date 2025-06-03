@@ -35,6 +35,7 @@ Throughout this 2.5-month journey, we’ll be diving into:
 This repository will grow with:
 - Daily or weekly project folders
 - Personal experiments and sandbox files
+- Refactored folder structure by topic (CSS, JS, DOM, JSX, Projects), once the module is done.
 - Notes and summaries on each topic covered
 
 Stay tuned for:
