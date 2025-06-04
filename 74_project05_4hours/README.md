@@ -1,4 +1,3 @@
-
 # 🛠️ React Mini Project – Habit Tracker
 
 A simple, responsive Habit Tracker built with React + Vite. Users can create custom habits, track daily progress, and visualize their completion—all with persistent local storage.
@@ -60,3 +59,4 @@ habit-tracker/
 
 ---
 This project is an opportunity to strengthen your React fundamentals while building something useful and real. Happy coding!
+
