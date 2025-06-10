@@ -52,18 +52,21 @@ src/
       HomeFeatures.jsx
       HomeSignup.jsx
       HomeStats.jsx
+      index.js
     about/
       AboutFAQ.jsx
       AboutHero.jsx
       AboutMission.jsx
       AboutStats.jsx
+      index.js
     shared/
       NavBar.jsx
       Footer.jsx
+      index.js
     index.js
   layouts/
-    index.js
     MainLayout.jsx
+    index.js
   pages/
     Home.jsx
     Destinations.jsx
