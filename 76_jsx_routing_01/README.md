@@ -48,9 +48,17 @@ The app includes the following routes:
 src/
   components/
     homepage/
+      HomeSearchBar.jsx
+      HomeFeatures.jsx
+      HomeSignup.jsx
+      HomeStats.jsx
     about/
+      AboutFAQ.jsx
+      AboutHero.jsx
+      AboutMission.jsx
+      AboutStats.jsx
     shared/
-      NacBar.jsx
+      NavBar.jsx
       Footer.jsx
     index.js
   layouts/
