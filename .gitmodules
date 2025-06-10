@@ -1,12 +1,12 @@
-[submodule "20_project02_10hours"]
-	path = 20_project02_10hours
-	url = ./20_project02_10hours
 [submodule "16_project01_concept_to_deployment"]
 	path = 16_project01_concept_to_deployment
 	url = https://github.com/Vaeshkar/16_project01_concept_to_deployment.git
+[submodule "20_project02_10hours"]
+	path = 20_project02_10hours
+	url = https://github.com/Vaeshkar/20_project02_10hours.git
 [submodule "41_project03_10hours"]
 	path = 41_project03_10hours
-	url = https://github.com/Vaeshkar/54_project04_10hours.git
+	url = https://github.com/Vaeshkar/41_project03_10hours.git
 [submodule "54_project04_10hours"]
 	path = 54_project04_10hours
 	url = https://github.com/Vaeshkar/54_project04_10hours.git
