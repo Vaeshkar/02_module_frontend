@@ -1,12 +1,118 @@
-# React + Vite
+# Travel Agency React App Skeleton
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project sets up a modern travel agency front-end using **React**, **Vite**, **React Router**, **TailwindCSS**, and **DaisyUI**. It focuses on clean project structure, multi-page navigation, and UI layout skills.
 
-Currently, two official plugins are available:
+## ✨ Objective
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Build the skeleton of a multi-page travel website with:
 
-## Expanding the ESLint configuration
+- Modern tooling (Vite, Tailwind, DaisyUI)
+- React Router for navigation
+- A modular file and component structure
+- Hard-coded travel destination cards and dynamic route handling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+1. **Install dependencies**  
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**  
+   ```bash
+   npm run dev
+   ```
+
+3. **View the app**  
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🧭 Pages & Routing
+
+The app includes the following routes:
+
+| Route               | Description                                |
+|--------------------|--------------------------------------------|
+| `/`                | Home page with a search bar                |
+| `/destinations`    | List of destination cards                  |
+| `/destinations/:slug` | Detailed page for a specific destination |
+| `/about`           | Information about the company              |
+| `/contact`         | Simple contact form (no submission logic)  |
+
+---
+
+## 📁 Suggested File Structure
+
+```
+src/
+  components/
+    homepage/
+    about/
+    shared/
+      NacBar.jsx
+      Footer.jsx
+    index.js
+  layouts/
+    index.js
+    MainLayout.jsx
+  pages/
+    Home.jsx
+    Destinations.jsx
+    DestinationDetails.jsx
+    About.jsx
+    Contact.jsx
+    index.js
+  App.jsx
+  main.jsx
+```
+
+> Use `index.js` files inside `components`, `pages`, and `layouts` to re-export modules for cleaner imports.
+
+Example:
+```js
+// src/components/index.js
+export { default as NavBar } from './shared/NavBar';
+export { default as SearchBar } from './homepage/SearchBar';
+```
+
+Then import like:
+```js
+import { NavBar, SearchBar } from '../components';
+```
+
+---
+
+## 🎨 UI & Styling
+
+- **Tailwind CSS**: utility-first styling
+- **DaisyUI**: pre-styled UI components for rapid prototyping
+- **Pexels / Unsplash**: image sources for destination previews  
+  *(Be sure to check artist license terms)*
+
+---
+
+## 💡 Notes
+
+- The Search Bar on the Home page navigates to the `/destinations` page when clicked.
+- Destination slugs (e.g., `/destinations/berlin`) are used for dynamic routing.
+- All pages share a navigation bar and footer layout.
+- Components are kept modular and organized for future scalability.
+
+---
+
+## 🏁 License
+
+For educational use at WBS Coding School.
+
+--
+
+## changelog
+
+- **v1.0.0**: Initial project setup with Vite, React, TailwindCSS, and DaisyUI.
+- **v1.0.1**: Added routing and basic page structure.
+- **v1.0.2**: Implemented layout components and shared UI elements.
+- **v1.0.3**: Added hard-coded destination cards and dynamic routing.
+- **v1.0.4**: Improved file structure and modular imports.
+- **v1.0.5**: Improved the About and Home page with DaiysUI Blocks.
+- 

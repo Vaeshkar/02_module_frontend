@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router";
+import { HomeFeatures, HomeSignup, HomeStats } from "../components/home";
+
 const Home = () => {
   const navigate = useNavigate();
   return (
@@ -10,6 +12,9 @@ const Home = () => {
         <input type="date" className="input input-bordered" />
         <button className="btn btn-primary" onClick={() => navigate("/destinations")}>Search</button>
       </div>
+      <HomeFeatures />
+      <HomeStats />
+      <HomeSignup />
     </div>
   );
 };
