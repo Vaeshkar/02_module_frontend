@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+body {
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Arial', sans-serif;
+}
+
+/* In index.css or a component-level .css file */
+.btn {
+  @apply px-4 py-2 text-black bg-white border-2 border-black rounded-full hover:border-2 hover:border-[#4a90e2] hover:bg-black hover:text-white transition-colors cursor-pointer;
+}
