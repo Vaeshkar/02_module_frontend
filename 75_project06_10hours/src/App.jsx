@@ -17,21 +17,24 @@ function App() {
 
   return (
     <>
-      <Header />
-      <main className="flex items-center justify-center h-[500px] bg-gray-100">
-        <div className="">
-          <h1
-            ref={titleRef}
-            style={{ opacity: 0, transform: "translateY(-50px)" }}
-            className="text-3xl font-bold text-amber-500"
-          >
-            Personal Diary App
-          </h1>
-        </div>
-      </main>
-      <Footer />
+      <div className="max-w-[1200px] mx-auto px-4">
+        <Header />
+        <main className="flex items-center justify-center h-[500px]">
+          <div>
+            <h1
+              ref={titleRef}
+              style={{ opacity: 0, transform: "translateY(-50px)" }}
+              className="text-3xl font-bold text-amber-500"
+            >
+              Personal Diary App
+            </h1>
+          </div>
+        </main>
+        <Footer />
+      </div>
     </>
   );
+
 }
 
 export default App;
