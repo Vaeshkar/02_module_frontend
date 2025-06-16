@@ -1,12 +1,16 @@
-# React + Vite
+# 🧠 Thinking in React – Parts I & II
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This exercise is split into two main parts based on the "Thinking in React" approach:
 
-Currently, two official plugins are available:
+## Part I: Component Structure and State Lifting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Created a ToDo List app using React functional components
+- Lifted state up to manage todos and filter
+- Passed props to child components (`AddToDo`, `FilterComponent`, `ToDoList`)
 
-## Expanding the ESLint configuration
+## Part II: Context API & Additional Challenges
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Refactored app to use the React Context API instead of prop drilling
+- Implemented a filter to show all, active, or completed todos
+- Integrated `localStorage` to persist todos
+- Applied conditional styling: line-through on completed todos
