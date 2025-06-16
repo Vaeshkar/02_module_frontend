@@ -1,6 +1,3 @@
-
-
-
 # 62 JS Production Build
 
 This project demonstrates a JavaScript production build using Parcel as the bundler.
