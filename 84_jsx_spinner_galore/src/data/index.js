@@ -31,7 +31,7 @@ export async function postsLoader() {
 }
 
 export async function postLoader() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts/100');
   if (!res.ok) throw new Error('Failed to fetch post');
   const post = await res.json();
   
