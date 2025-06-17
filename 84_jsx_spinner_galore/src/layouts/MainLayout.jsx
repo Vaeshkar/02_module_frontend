@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, Outlet } from 'react-router';
+import { NavLink, Link, Outlet } from 'react-router';
 import { ToastContainer } from 'react-toastify';
 
 const MainLayout = () => {
@@ -24,12 +24,25 @@ const MainLayout = () => {
           </Link>
         </div>
         <div className='flex-none'>
-          <ul className='menu menu-horizontal px-1'>{/* Your Links go here */}</ul>
+          <ul className='menu menu-horizontal gap-4 px-4'>
+            <li>
+              <NavLink className={({ isActive }) => `btn btn-ghost ${isActive ? 'btn-active text-primary font-bold' : ''}`} to='/pokemonList'>Pokemon List</NavLink>
+            </li>
+            <li>
+              <NavLink className={({ isActive }) => `btn btn-ghost ${isActive ? 'btn-active text-primary font-bold' : ''}`} to='/pokemon'>Pokemon</NavLink>
+            </li>
+            <li>
+              <NavLink className={({ isActive }) => `btn btn-ghost ${isActive ? 'btn-active text-primary font-bold' : ''}`} to='/post'>Post</NavLink>
+            </li>
+            <li>
+              <NavLink className={({ isActive }) => `btn btn-ghost ${isActive ? 'btn-active text-primary font-bold' : ''}`} to='/posts'>Posts</NavLink>
+            </li>
+          </ul>
         </div>
       </nav>
       <ToastContainer theme={prefersDark ? 'dark' : 'light'} />
       <main>
-        <div className='container mx-auto p-4'>
+        <div className='container mx-auto p-4 max-w-3xl'>
           <Outlet />
         </div>
       </main>
