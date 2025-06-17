@@ -1,4 +1,4 @@
-import { createContext, use, useReducer } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 
 const products = [
   { id: 1, name: 'Product 1', price: 29.99 },
@@ -91,7 +91,7 @@ const CartProvider = ({ children }) => {
   );
 };
 const ProductList = () => {
-  const { dispatch } = use(CartContext);
+  const { dispatch } = useContext(CartContext);
 
   return (
     <ul className="mt-4">
@@ -112,7 +112,7 @@ const ProductList = () => {
 };
 
 const CartItems = () => {
-  const { cart, dispatch } = use(CartContext);
+  const { cart, dispatch } = useContext(CartContext);
 
   return (
     <ul className="mt-2">
@@ -137,7 +137,7 @@ const CartItems = () => {
 };
 
 const CartSummary = () => {
-  const { cart, dispatch } = use(CartContext);
+  const { cart, dispatch } = useContext(CartContext);
 
   return (
     <div className="mt-4 text-right">
@@ -154,7 +154,7 @@ const CartSummary = () => {
 };
 
 const CartHeader = () => {
-  const { cart } = use(CartContext);
+  const { cart } = useContext(CartContext);
   return (
     <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
       {cart.user}, this is your shopping cart
