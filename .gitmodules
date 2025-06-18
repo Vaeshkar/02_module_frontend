@@ -1,3 +1,6 @@
 [submodule "75_project06_10hours"]
 	path = 75_project06_10hours
 	url = git@github.com:Vaeshkar/75_project06_10hours.git
+[submodule "83_project07_10hours"]
+	path = 83_project07_10hours
+	url = https://github.com/Vaeshkar/project07_10hours
