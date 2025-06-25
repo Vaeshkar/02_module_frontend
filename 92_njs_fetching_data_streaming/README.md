@@ -1,0 +1,1 @@
+## Exercise done in folder 92_njs_fetching_data_streaming
