@@ -1,0 +1,7 @@
+[build]
+  base = "95_njs_fake_ecommerce_site/fake-ecommerce"
+  publish = ".next"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
