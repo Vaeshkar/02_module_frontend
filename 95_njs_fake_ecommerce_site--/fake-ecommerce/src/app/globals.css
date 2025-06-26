@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+body {
+  background: #fff;
+  color:#303030;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  box-shadow: none !important;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:hover {
+  transform: scale(110%);
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: #303030;
+  border: 2px solid #d9b028;
+}
+
+.btn-primary:hover {
+  background-color: #d9b028;
+  color: #303030;
+}
+
+.btn-secondary {
+  background-color: #d9b028;
+  color: #303030;
+  border: 2px solid #d9b028;
+}
+
+.btn-secondary:hover {
+  background-color: #303030;
+  color: #d9b028;
+  border: 2px solid #303030;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #303030;
+  border: 1px solid #303030;
+}
+
+.btn-category {
+  background-color: transparent;
+  color: #303030;
+  border: 1px solid #303030;
+  border-radius: 9999px;
+}
+
+.badge-commerce {
+  background-color: #d9b028;
+  color: #303030;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: 0;
+}
